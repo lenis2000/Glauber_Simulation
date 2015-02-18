@@ -10,66 +10,33 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     77820,       1618]
-NotebookOptionsPosition[     77134,       1592]
-NotebookOutlinePosition[     77487,       1608]
-CellTagsIndexPosition[     77444,       1605]
+NotebookDataLength[     50140,       1141]
+NotebookOptionsPosition[     49500,       1116]
+NotebookOutlinePosition[     49853,       1132]
+CellTagsIndexPosition[     49810,       1129]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
  RowBox[{"n", ":=", 
-  RowBox[{"Length", "[", "\[Lambda]", "]"}]}]], "Input",
+  RowBox[{"Length", "[", 
+   RowBox[{"\[Lambda]", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.6332053180597258`*^9, 3.6332053186857233`*^9}, {
   3.633207022174069*^9, 3.633207022249222*^9}, {3.63321242022429*^9, 
-  3.6332124240138187`*^9}},
+  3.6332124240138187`*^9}, {3.633258832271429*^9, 3.633258832676313*^9}},
  FontSize->16],
 
 Cell[BoxData[
  RowBox[{"\[Lambda]", ":=", 
-  RowBox[{"{", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-     "1.0", ",", "0.0", ",", "0.0", ",", "0.0", ",", "0.0", ",", "0.0"}], 
-     "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-     "1.0", ",", "1.0", ",", "0.0", ",", "0.0", ",", "0.0", ",", "0.0"}], 
-     "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-     "1.0", ",", "1.0", ",", "1.0", ",", "0.0", ",", "0.0", ",", "0.0"}], 
-     "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-     "1.0", ",", "1.0", ",", "1.0", ",", "1.0", ",", "0.0", ",", "0.0"}], 
-     "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-     "13.0", ",", "10.0", ",", "10.0", ",", "1.0", ",", "1.0", ",", "0.0"}], 
-     "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-     "13.0", ",", "13.0", ",", "10.0", ",", "10.0", ",", "1.0", ",", "1.0"}], 
-     "}"}]}], "}"}]}]], "Input",
- CellChangeTimes->{{3.633204914363926*^9, 3.6332049169025087`*^9}, 
-   3.6332052054575787`*^9, 3.633205316430903*^9, 3.6332070193022633`*^9, 
-   3.633209667934867*^9, {3.6332124300605907`*^9, 3.633212433429123*^9}, {
-   3.633212486920697*^9, 3.633212491855537*^9}, {3.6332125359936457`*^9, 
-   3.6332125596366577`*^9}, {3.633212597762718*^9, 3.633212600661018*^9}, {
-   3.633212633691739*^9, 3.63321266581945*^9}, {3.6332127279353123`*^9, 
-   3.633212730642063*^9}, {3.633213259236128*^9, 3.633213262393989*^9}, {
-   3.633213326489723*^9, 3.633213331373673*^9}, {3.633213494942915*^9, 
-   3.633213495825704*^9}, {3.6332146737380543`*^9, 3.6332146747481956`*^9}, {
-   3.633214896402688*^9, 3.633214897416727*^9}, {3.633214976387926*^9, 
-   3.6332149776870213`*^9}, {3.633215196079617*^9, 3.6332151972857924`*^9}, {
-   3.633215251655719*^9, 3.633215252876731*^9}, {3.633215564436028*^9, 
-   3.633215565509379*^9}, {3.633216597856916*^9, 3.633216599049608*^9}, {
-   3.633249580477213*^9, 3.633249581813607*^9}, {3.633250304803836*^9, 
-   3.633250305672336*^9}, {3.633250442961941*^9, 3.633250444657895*^9}, {
-   3.633252295221622*^9, 3.633252296392393*^9}, 3.633257660070889*^9},
+  RowBox[{
+  "ReadList", "[", 
+   "\"\</Users/leo/Dropbox/Sci/Glauber_Simulation/output.txt\>\"", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.633258383802615*^9, 3.6332584339080257`*^9}, {
+  3.633258475598988*^9, 3.6332585174071293`*^9}, {3.633258568759956*^9, 
+  3.633258571740739*^9}, {3.633258741351822*^9, 3.633258805520088*^9}},
  FontSize->16],
 
 Cell[BoxData[
@@ -240,7 +207,9 @@ Cell[BoxData[
        RowBox[{"x", ">=", 
         RowBox[{
          RowBox[{
-          RowBox[{"\[Lambda]", "[", 
+          RowBox[{
+           RowBox[{"\[Lambda]", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
            RowBox[{"[", "k", "]"}], "]"}], "[", 
           RowBox[{"[", "i", "]"}], "]"}], "-", "i"}]}], ",", "1", ",", "0"}], 
       "]"}], ",", 
@@ -256,7 +225,9 @@ Cell[BoxData[
          RowBox[{"x", ">=", 
           RowBox[{
            RowBox[{
-            RowBox[{"\[Lambda]", "[", 
+            RowBox[{
+             RowBox[{"\[Lambda]", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], "[", 
              RowBox[{"[", 
               RowBox[{"k", "-", "1"}], "]"}], "]"}], "[", 
             RowBox[{"[", "i", "]"}], "]"}], "-", "i"}]}], ",", "1", ",", 
@@ -277,7 +248,7 @@ Cell[BoxData[
    3.633215870960813*^9}, {3.633215946835446*^9, 3.633215946863708*^9}, 
    3.6332162122562513`*^9, {3.6332162473800097`*^9, 3.633216266862759*^9}, {
    3.633216302261244*^9, 3.633216311942513*^9}, {3.63321638105737*^9, 
-   3.633216382885769*^9}},
+   3.633216382885769*^9}, {3.633258821889125*^9, 3.633258825307876*^9}},
  FontSize->16],
 
 Cell[BoxData[
@@ -341,7 +312,9 @@ Cell[BoxData[
          RowBox[{
           RowBox[{
            RowBox[{
-            RowBox[{"\[Lambda]", "[", 
+            RowBox[{
+             RowBox[{"\[Lambda]", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], "[", 
              RowBox[{"[", "i", "]"}], "]"}], "[", 
             RowBox[{"[", "j", "]"}], "]"}], "-", "j"}], ",", "i", ",", 
           "eps"}], "]"}], ",", 
@@ -368,47 +341,39 @@ Cell[BoxData[
    3.6332169829117804`*^9}, 3.6332495891220407`*^9, {3.63324967379923*^9, 
    3.633249705605566*^9}, {3.633249765203858*^9, 3.633249803444703*^9}, {
    3.633250313172873*^9, 3.633250313310747*^9}, {3.6332504570968027`*^9, 
-   3.633250458928175*^9}},
+   3.633250458928175*^9}, {3.6332588263908587`*^9, 3.633258827084957*^9}},
  FontSize->16],
 
 Cell[BoxData[
  GraphicsBox[GeometricTransformationBox[{{{
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[1, 2], 0}, {Rational[1, 2], 1}, {
-          Rational[3, 2], 1}, {Rational[3, 2], 0}, {Rational[1, 2], 0}}, {{
-          0.5, 0}, {0.5, 1}, {1.5, 1}, {1.5, 0}, {0.5, 0}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[1, 2], 0}, {Rational[-1, 2], 1}, {
+          Rational[1, 2], 1}, {Rational[3, 2], 0}, {Rational[1, 2], 0}}, {{
+          0.5, 0}, {-0.5, 1}, {0.5, 1}, {1.5, 0}, {0.5, 0}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[3, 2], 0}, {Rational[3, 2], 1}, {
-          Rational[5, 2], 1}, {Rational[5, 2], 0}, {Rational[3, 2], 0}}, {{
-          1.5, 0}, {1.5, 1}, {2.5, 1}, {2.5, 0}, {1.5, 0}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[3, 2], 0}, {Rational[1, 2], 1}, {
+          Rational[3, 2], 1}, {Rational[5, 2], 0}, {Rational[3, 2], 0}}, {{
+          1.5, 0}, {0.5, 1}, {1.5, 1}, {2.5, 0}, {1.5, 0}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[5, 2], 0}, {Rational[5, 2], 1}, {
-          Rational[7, 2], 1}, {Rational[7, 2], 0}, {Rational[5, 2], 0}}, {{
-          2.5, 0}, {2.5, 1}, {3.5, 1}, {3.5, 0}, {2.5, 0}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[5, 2], 0}, {Rational[3, 2], 1}, {
+          Rational[5, 2], 1}, {Rational[7, 2], 0}, {Rational[5, 2], 0}}, {{
+          2.5, 0}, {1.5, 1}, {2.5, 1}, {3.5, 0}, {2.5, 0}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[7, 2], 0}, {Rational[7, 2], 1}, {
-          Rational[9, 2], 1}, {Rational[9, 2], 0}, {Rational[7, 2], 0}}, {{
-          3.5, 0}, {3.5, 1}, {4.5, 1}, {4.5, 0}, {3.5, 0}}]]}, 
+        NCache[{{Rational[7, 2], 0}, {Rational[5, 2], 1}, {
+          Rational[7, 2], 1}, {Rational[9, 2], 0}, {Rational[7, 2], 0}}, {{
+          3.5, 0}, {2.5, 1}, {3.5, 1}, {4.5, 0}, {3.5, 0}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -481,34 +446,28 @@ Cell[BoxData[
         NCache[{{Rational[23, 2], 0}, {Rational[23, 2], 1}, {
           Rational[25, 2], 1}, {Rational[25, 2], 0}, {Rational[23, 2], 0}}, {{
           11.5, 0}, {11.5, 1}, {12.5, 1}, {12.5, 0}, {11.5, 0}}]]}}, {
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-1, 2], 1}, {Rational[-1, 2], 2}, {
-          Rational[1, 2], 2}, {Rational[1, 2], 1}, {
-          Rational[-1, 2], 1}}, {{-0.5, 1}, {-0.5, 2}, {0.5, 2}, {
+        NCache[{{Rational[-1, 2], 1}, {Rational[-3, 2], 2}, {
+          Rational[-1, 2], 2}, {Rational[1, 2], 1}, {
+          Rational[-1, 2], 1}}, {{-0.5, 1}, {-1.5, 2}, {-0.5, 2}, {
           0.5, 1}, {-0.5, 1}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[1, 2], 1}, {Rational[1, 2], 2}, {
-          Rational[3, 2], 2}, {Rational[3, 2], 1}, {Rational[1, 2], 1}}, {{
-          0.5, 1}, {0.5, 2}, {1.5, 2}, {1.5, 1}, {0.5, 1}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[1, 2], 1}, {Rational[-1, 2], 2}, {
+          Rational[1, 2], 2}, {Rational[3, 2], 1}, {Rational[1, 2], 1}}, {{
+          0.5, 1}, {-0.5, 2}, {0.5, 2}, {1.5, 1}, {0.5, 1}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[3, 2], 1}, {Rational[3, 2], 2}, {
-          Rational[5, 2], 2}, {Rational[5, 2], 1}, {Rational[3, 2], 1}}, {{
-          1.5, 1}, {1.5, 2}, {2.5, 2}, {2.5, 1}, {1.5, 1}}]]}, 
+        NCache[{{Rational[3, 2], 1}, {Rational[1, 2], 2}, {
+          Rational[3, 2], 2}, {Rational[5, 2], 1}, {Rational[3, 2], 1}}, {{
+          1.5, 1}, {0.5, 2}, {1.5, 2}, {2.5, 1}, {1.5, 1}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -527,42 +486,34 @@ Cell[BoxData[
         NCache[{{Rational[7, 2], 1}, {Rational[7, 2], 2}, {
           Rational[9, 2], 2}, {Rational[9, 2], 1}, {Rational[7, 2], 1}}, {{
           3.5, 1}, {3.5, 2}, {4.5, 2}, {4.5, 1}, {3.5, 1}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[9, 2], 1}, {Rational[9, 2], 2}, {
-          Rational[11, 2], 2}, {Rational[11, 2], 1}, {Rational[9, 2], 1}}, {{
-          4.5, 1}, {4.5, 2}, {5.5, 2}, {5.5, 1}, {4.5, 1}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[9, 2], 1}, {Rational[7, 2], 2}, {
+          Rational[9, 2], 2}, {Rational[11, 2], 1}, {Rational[9, 2], 1}}, {{
+          4.5, 1}, {3.5, 2}, {4.5, 2}, {5.5, 1}, {4.5, 1}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[11, 2], 1}, {Rational[11, 2], 2}, {
-          Rational[13, 2], 2}, {Rational[13, 2], 1}, {Rational[11, 2], 1}}, {{
-          5.5, 1}, {5.5, 2}, {6.5, 2}, {6.5, 1}, {5.5, 1}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[11, 2], 1}, {Rational[9, 2], 2}, {
+          Rational[11, 2], 2}, {Rational[13, 2], 1}, {Rational[11, 2], 1}}, {{
+          5.5, 1}, {4.5, 2}, {5.5, 2}, {6.5, 1}, {5.5, 1}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[13, 2], 1}, {Rational[13, 2], 2}, {
-          Rational[15, 2], 2}, {Rational[15, 2], 1}, {Rational[13, 2], 1}}, {{
-          6.5, 1}, {6.5, 2}, {7.5, 2}, {7.5, 1}, {6.5, 1}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[13, 2], 1}, {Rational[11, 2], 2}, {
+          Rational[13, 2], 2}, {Rational[15, 2], 1}, {Rational[13, 2], 1}}, {{
+          6.5, 1}, {5.5, 2}, {6.5, 2}, {7.5, 1}, {6.5, 1}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[15, 2], 1}, {Rational[15, 2], 2}, {
-          Rational[17, 2], 2}, {Rational[17, 2], 1}, {Rational[15, 2], 1}}, {{
-          7.5, 1}, {7.5, 2}, {8.5, 2}, {8.5, 1}, {7.5, 1}}]]}, 
+        NCache[{{Rational[15, 2], 1}, {Rational[13, 2], 2}, {
+          Rational[15, 2], 2}, {Rational[17, 2], 1}, {Rational[15, 2], 1}}, {{
+          7.5, 1}, {6.5, 2}, {7.5, 2}, {8.5, 1}, {7.5, 1}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -599,35 +550,29 @@ Cell[BoxData[
         NCache[{{Rational[23, 2], 1}, {Rational[23, 2], 2}, {
           Rational[25, 2], 2}, {Rational[25, 2], 1}, {Rational[23, 2], 1}}, {{
           11.5, 1}, {11.5, 2}, {12.5, 2}, {12.5, 1}, {11.5, 1}}]]}}, {
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-3, 2], 2}, {Rational[-3, 2], 3}, {
-          Rational[-1, 2], 3}, {Rational[-1, 2], 2}, {
-          Rational[-3, 2], 2}}, {{-1.5, 2}, {-1.5, 3}, {-0.5, 3}, {-0.5, 
+        NCache[{{Rational[-3, 2], 2}, {Rational[-5, 2], 3}, {
+          Rational[-3, 2], 3}, {Rational[-1, 2], 2}, {
+          Rational[-3, 2], 2}}, {{-1.5, 2}, {-2.5, 3}, {-1.5, 3}, {-0.5, 
            2}, {-1.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-1, 2], 2}, {Rational[-1, 2], 3}, {
-          Rational[1, 2], 3}, {Rational[1, 2], 2}, {
-          Rational[-1, 2], 2}}, {{-0.5, 2}, {-0.5, 3}, {0.5, 3}, {
+        NCache[{{Rational[-1, 2], 2}, {Rational[-3, 2], 3}, {
+          Rational[-1, 2], 3}, {Rational[1, 2], 2}, {
+          Rational[-1, 2], 2}}, {{-0.5, 2}, {-1.5, 3}, {-0.5, 3}, {
           0.5, 2}, {-0.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[1, 2], 2}, {Rational[1, 2], 3}, {
-          Rational[3, 2], 3}, {Rational[3, 2], 2}, {Rational[1, 2], 2}}, {{
-          0.5, 2}, {0.5, 3}, {1.5, 3}, {1.5, 2}, {0.5, 2}}]]}, 
+        NCache[{{Rational[1, 2], 2}, {Rational[-1, 2], 3}, {
+          Rational[1, 2], 3}, {Rational[3, 2], 2}, {Rational[1, 2], 2}}, {{
+          0.5, 2}, {-0.5, 3}, {0.5, 3}, {1.5, 2}, {0.5, 2}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -637,33 +582,27 @@ Cell[BoxData[
         NCache[{{Rational[3, 2], 2}, {Rational[3, 2], 3}, {
           Rational[5, 2], 3}, {Rational[5, 2], 2}, {Rational[3, 2], 2}}, {{
           1.5, 2}, {1.5, 3}, {2.5, 3}, {2.5, 2}, {1.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[5, 2], 2}, {Rational[5, 2], 3}, {
-          Rational[7, 2], 3}, {Rational[7, 2], 2}, {Rational[5, 2], 2}}, {{
-          2.5, 2}, {2.5, 3}, {3.5, 3}, {3.5, 2}, {2.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[5, 2], 2}, {Rational[3, 2], 3}, {
+          Rational[5, 2], 3}, {Rational[7, 2], 2}, {Rational[5, 2], 2}}, {{
+          2.5, 2}, {1.5, 3}, {2.5, 3}, {3.5, 2}, {2.5, 2}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[7, 2], 2}, {Rational[7, 2], 3}, {
-          Rational[9, 2], 3}, {Rational[9, 2], 2}, {Rational[7, 2], 2}}, {{
-          3.5, 2}, {3.5, 3}, {4.5, 3}, {4.5, 2}, {3.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[7, 2], 2}, {Rational[5, 2], 3}, {
+          Rational[7, 2], 3}, {Rational[9, 2], 2}, {Rational[7, 2], 2}}, {{
+          3.5, 2}, {2.5, 3}, {3.5, 3}, {4.5, 2}, {3.5, 2}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[9, 2], 2}, {Rational[9, 2], 3}, {
-          Rational[11, 2], 3}, {Rational[11, 2], 2}, {Rational[9, 2], 2}}, {{
-          4.5, 2}, {4.5, 3}, {5.5, 3}, {5.5, 2}, {4.5, 2}}]]}, 
+        NCache[{{Rational[9, 2], 2}, {Rational[7, 2], 3}, {
+          Rational[9, 2], 3}, {Rational[11, 2], 2}, {Rational[9, 2], 2}}, {{
+          4.5, 2}, {3.5, 3}, {4.5, 3}, {5.5, 2}, {4.5, 2}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -691,33 +630,27 @@ Cell[BoxData[
         NCache[{{Rational[15, 2], 2}, {Rational[15, 2], 3}, {
           Rational[17, 2], 3}, {Rational[17, 2], 2}, {Rational[15, 2], 2}}, {{
           7.5, 2}, {7.5, 3}, {8.5, 3}, {8.5, 2}, {7.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[17, 2], 2}, {Rational[17, 2], 3}, {
-          Rational[19, 2], 3}, {Rational[19, 2], 2}, {Rational[17, 2], 2}}, {{
-          8.5, 2}, {8.5, 3}, {9.5, 3}, {9.5, 2}, {8.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[17, 2], 2}, {Rational[15, 2], 3}, {
+          Rational[17, 2], 3}, {Rational[19, 2], 2}, {Rational[17, 2], 2}}, {{
+          8.5, 2}, {7.5, 3}, {8.5, 3}, {9.5, 2}, {8.5, 2}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[19, 2], 2}, {Rational[19, 2], 3}, {
-          Rational[21, 2], 3}, {Rational[21, 2], 2}, {Rational[19, 2], 2}}, {{
-          9.5, 2}, {9.5, 3}, {10.5, 3}, {10.5, 2}, {9.5, 2}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[19, 2], 2}, {Rational[17, 2], 3}, {
+          Rational[19, 2], 3}, {Rational[21, 2], 2}, {Rational[19, 2], 2}}, {{
+          9.5, 2}, {8.5, 3}, {9.5, 3}, {10.5, 2}, {9.5, 2}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[21, 2], 2}, {Rational[21, 2], 3}, {
-          Rational[23, 2], 3}, {Rational[23, 2], 2}, {Rational[21, 2], 2}}, {{
-          10.5, 2}, {10.5, 3}, {11.5, 3}, {11.5, 2}, {10.5, 2}}]]}, 
+        NCache[{{Rational[21, 2], 2}, {Rational[19, 2], 3}, {
+          Rational[21, 2], 3}, {Rational[23, 2], 2}, {Rational[21, 2], 2}}, {{
+          10.5, 2}, {9.5, 3}, {10.5, 3}, {11.5, 2}, {10.5, 2}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -727,25 +660,21 @@ Cell[BoxData[
         NCache[{{Rational[23, 2], 2}, {Rational[23, 2], 3}, {
           Rational[25, 2], 3}, {Rational[25, 2], 2}, {Rational[23, 2], 2}}, {{
           11.5, 2}, {11.5, 3}, {12.5, 3}, {12.5, 2}, {11.5, 2}}]]}}, {
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-5, 2], 3}, {Rational[-5, 2], 4}, {
-          Rational[-3, 2], 4}, {Rational[-3, 2], 3}, {
-          Rational[-5, 2], 3}}, {{-2.5, 3}, {-2.5, 4}, {-1.5, 4}, {-1.5, 
+        NCache[{{Rational[-5, 2], 3}, {Rational[-7, 2], 4}, {
+          Rational[-5, 2], 4}, {Rational[-3, 2], 3}, {
+          Rational[-5, 2], 3}}, {{-2.5, 3}, {-3.5, 4}, {-2.5, 4}, {-1.5, 
            3}, {-2.5, 3}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-3, 2], 3}, {Rational[-3, 2], 4}, {
-          Rational[-1, 2], 4}, {Rational[-1, 2], 3}, {
-          Rational[-3, 2], 3}}, {{-1.5, 3}, {-1.5, 4}, {-0.5, 4}, {-0.5, 
+        NCache[{{Rational[-3, 2], 3}, {Rational[-5, 2], 4}, {
+          Rational[-3, 2], 4}, {Rational[-1, 2], 3}, {
+          Rational[-3, 2], 3}}, {{-1.5, 3}, {-2.5, 4}, {-1.5, 4}, {-0.5, 
            3}, {-1.5, 3}}]]}, 
       {RGBColor[1, 
         NCache[
@@ -766,33 +695,27 @@ Cell[BoxData[
         NCache[{{Rational[1, 2], 3}, {Rational[1, 2], 4}, {
           Rational[3, 2], 4}, {Rational[3, 2], 3}, {Rational[1, 2], 3}}, {{
           0.5, 3}, {0.5, 4}, {1.5, 4}, {1.5, 3}, {0.5, 3}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[3, 2], 3}, {Rational[3, 2], 4}, {
-          Rational[5, 2], 4}, {Rational[5, 2], 3}, {Rational[3, 2], 3}}, {{
-          1.5, 3}, {1.5, 4}, {2.5, 4}, {2.5, 3}, {1.5, 3}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[3, 2], 3}, {Rational[1, 2], 4}, {
+          Rational[3, 2], 4}, {Rational[5, 2], 3}, {Rational[3, 2], 3}}, {{
+          1.5, 3}, {0.5, 4}, {1.5, 4}, {2.5, 3}, {1.5, 3}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[5, 2], 3}, {Rational[5, 2], 4}, {
-          Rational[7, 2], 4}, {Rational[7, 2], 3}, {Rational[5, 2], 3}}, {{
-          2.5, 3}, {2.5, 4}, {3.5, 4}, {3.5, 3}, {2.5, 3}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[5, 2], 3}, {Rational[3, 2], 4}, {
+          Rational[5, 2], 4}, {Rational[7, 2], 3}, {Rational[5, 2], 3}}, {{
+          2.5, 3}, {1.5, 4}, {2.5, 4}, {3.5, 3}, {2.5, 3}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[7, 2], 3}, {Rational[7, 2], 4}, {
-          Rational[9, 2], 4}, {Rational[9, 2], 3}, {Rational[7, 2], 3}}, {{
-          3.5, 3}, {3.5, 4}, {4.5, 4}, {4.5, 3}, {3.5, 3}}]]}, 
+        NCache[{{Rational[7, 2], 3}, {Rational[5, 2], 4}, {
+          Rational[7, 2], 4}, {Rational[9, 2], 3}, {Rational[7, 2], 3}}, {{
+          3.5, 3}, {2.5, 4}, {3.5, 4}, {4.5, 3}, {3.5, 3}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -802,33 +725,27 @@ Cell[BoxData[
         NCache[{{Rational[9, 2], 3}, {Rational[9, 2], 4}, {
           Rational[11, 2], 4}, {Rational[11, 2], 3}, {Rational[9, 2], 3}}, {{
           4.5, 3}, {4.5, 4}, {5.5, 4}, {5.5, 3}, {4.5, 3}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[11, 2], 3}, {Rational[11, 2], 4}, {
-          Rational[13, 2], 4}, {Rational[13, 2], 3}, {Rational[11, 2], 3}}, {{
-          5.5, 3}, {5.5, 4}, {6.5, 4}, {6.5, 3}, {5.5, 3}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[11, 2], 3}, {Rational[9, 2], 4}, {
+          Rational[11, 2], 4}, {Rational[13, 2], 3}, {Rational[11, 2], 3}}, {{
+          5.5, 3}, {4.5, 4}, {5.5, 4}, {6.5, 3}, {5.5, 3}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[13, 2], 3}, {Rational[13, 2], 4}, {
-          Rational[15, 2], 4}, {Rational[15, 2], 3}, {Rational[13, 2], 3}}, {{
-          6.5, 3}, {6.5, 4}, {7.5, 4}, {7.5, 3}, {6.5, 3}}]]}, 
-      {RGBColor[1, 
-        NCache[
-         Rational[1, 3], 0.3333333333333333], 
+        NCache[{{Rational[13, 2], 3}, {Rational[11, 2], 4}, {
+          Rational[13, 2], 4}, {Rational[15, 2], 3}, {Rational[13, 2], 3}}, {{
+          6.5, 3}, {5.5, 4}, {6.5, 4}, {7.5, 3}, {6.5, 3}}]]}, 
+      {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[15, 2], 3}, {Rational[15, 2], 4}, {
-          Rational[17, 2], 4}, {Rational[17, 2], 3}, {Rational[15, 2], 3}}, {{
-          7.5, 3}, {7.5, 4}, {8.5, 4}, {8.5, 3}, {7.5, 3}}]]}, 
+        NCache[{{Rational[15, 2], 3}, {Rational[13, 2], 4}, {
+          Rational[15, 2], 4}, {Rational[17, 2], 3}, {Rational[15, 2], 3}}, {{
+          7.5, 3}, {6.5, 4}, {7.5, 4}, {8.5, 3}, {7.5, 3}}]]}, 
       {RGBColor[1, 
         NCache[
          Rational[1, 3], 0.3333333333333333], 
@@ -885,13 +802,15 @@ Cell[BoxData[
           Rational[-3, 2], 5}, {Rational[-3, 2], 4}, {
           Rational[-5, 2], 4}}, {{-2.5, 4}, {-2.5, 5}, {-1.5, 5}, {-1.5, 
            4}, {-2.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-3, 2], 4}, {Rational[-5, 2], 5}, {
-          Rational[-3, 2], 5}, {Rational[-1, 2], 4}, {
-          Rational[-3, 2], 4}}, {{-1.5, 4}, {-2.5, 5}, {-1.5, 5}, {-0.5, 
+        NCache[{{Rational[-3, 2], 4}, {Rational[-3, 2], 5}, {
+          Rational[-1, 2], 5}, {Rational[-1, 2], 4}, {
+          Rational[-3, 2], 4}}, {{-1.5, 4}, {-1.5, 5}, {-0.5, 5}, {-0.5, 
            4}, {-1.5, 4}}]]}, 
       {RGBColor[1, 1, 
         NCache[
@@ -901,34 +820,42 @@ Cell[BoxData[
           Rational[-1, 2], 5}, {Rational[1, 2], 4}, {
           Rational[-1, 2], 4}}, {{-0.5, 4}, {-1.5, 5}, {-0.5, 5}, {
           0.5, 4}, {-0.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[1, 2], 4}, {Rational[-1, 2], 5}, {
-          Rational[1, 2], 5}, {Rational[3, 2], 4}, {Rational[1, 2], 4}}, {{
-          0.5, 4}, {-0.5, 5}, {0.5, 5}, {1.5, 4}, {0.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+        NCache[{{Rational[1, 2], 4}, {Rational[1, 2], 5}, {
+          Rational[3, 2], 5}, {Rational[3, 2], 4}, {Rational[1, 2], 4}}, {{
+          0.5, 4}, {0.5, 5}, {1.5, 5}, {1.5, 4}, {0.5, 4}}]]}, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[3, 2], 4}, {Rational[1, 2], 5}, {
-          Rational[3, 2], 5}, {Rational[5, 2], 4}, {Rational[3, 2], 4}}, {{
-          1.5, 4}, {0.5, 5}, {1.5, 5}, {2.5, 4}, {1.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+        NCache[{{Rational[3, 2], 4}, {Rational[3, 2], 5}, {
+          Rational[5, 2], 5}, {Rational[5, 2], 4}, {Rational[3, 2], 4}}, {{
+          1.5, 4}, {1.5, 5}, {2.5, 5}, {2.5, 4}, {1.5, 4}}]]}, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[5, 2], 4}, {Rational[3, 2], 5}, {
-          Rational[5, 2], 5}, {Rational[7, 2], 4}, {Rational[5, 2], 4}}, {{
-          2.5, 4}, {1.5, 5}, {2.5, 5}, {3.5, 4}, {2.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+        NCache[{{Rational[5, 2], 4}, {Rational[5, 2], 5}, {
+          Rational[7, 2], 5}, {Rational[7, 2], 4}, {Rational[5, 2], 4}}, {{
+          2.5, 4}, {2.5, 5}, {3.5, 5}, {3.5, 4}, {2.5, 4}}]]}, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[7, 2], 4}, {Rational[5, 2], 5}, {
-          Rational[7, 2], 5}, {Rational[9, 2], 4}, {Rational[7, 2], 4}}, {{
-          3.5, 4}, {2.5, 5}, {3.5, 5}, {4.5, 4}, {3.5, 4}}]]}, 
+        NCache[{{Rational[7, 2], 4}, {Rational[7, 2], 5}, {
+          Rational[9, 2], 5}, {Rational[9, 2], 4}, {Rational[7, 2], 4}}, {{
+          3.5, 4}, {3.5, 5}, {4.5, 5}, {4.5, 4}, {3.5, 4}}]]}, 
       {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
@@ -950,34 +877,42 @@ Cell[BoxData[
         NCache[{{Rational[13, 2], 4}, {Rational[11, 2], 5}, {
           Rational[13, 2], 5}, {Rational[15, 2], 4}, {Rational[13, 2], 4}}, {{
           6.5, 4}, {5.5, 5}, {6.5, 5}, {7.5, 4}, {6.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[15, 2], 4}, {Rational[13, 2], 5}, {
-          Rational[15, 2], 5}, {Rational[17, 2], 4}, {Rational[15, 2], 4}}, {{
-          7.5, 4}, {6.5, 5}, {7.5, 5}, {8.5, 4}, {7.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+        NCache[{{Rational[15, 2], 4}, {Rational[15, 2], 5}, {
+          Rational[17, 2], 5}, {Rational[17, 2], 4}, {Rational[15, 2], 4}}, {{
+          7.5, 4}, {7.5, 5}, {8.5, 5}, {8.5, 4}, {7.5, 4}}]]}, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[17, 2], 4}, {Rational[15, 2], 5}, {
-          Rational[17, 2], 5}, {Rational[19, 2], 4}, {Rational[17, 2], 4}}, {{
-          8.5, 4}, {7.5, 5}, {8.5, 5}, {9.5, 4}, {8.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+        NCache[{{Rational[17, 2], 4}, {Rational[17, 2], 5}, {
+          Rational[19, 2], 5}, {Rational[19, 2], 4}, {Rational[17, 2], 4}}, {{
+          8.5, 4}, {8.5, 5}, {9.5, 5}, {9.5, 4}, {8.5, 4}}]]}, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[19, 2], 4}, {Rational[17, 2], 5}, {
-          Rational[19, 2], 5}, {Rational[21, 2], 4}, {Rational[19, 2], 4}}, {{
-          9.5, 4}, {8.5, 5}, {9.5, 5}, {10.5, 4}, {9.5, 4}}]]}, 
-      {RGBColor[1, 1, 
+        NCache[{{Rational[19, 2], 4}, {Rational[19, 2], 5}, {
+          Rational[21, 2], 5}, {Rational[21, 2], 4}, {Rational[19, 2], 4}}, {{
+          9.5, 4}, {9.5, 5}, {10.5, 5}, {10.5, 4}, {9.5, 4}}]]}, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[21, 2], 4}, {Rational[19, 2], 5}, {
-          Rational[21, 2], 5}, {Rational[23, 2], 4}, {Rational[21, 2], 4}}, {{
-          10.5, 4}, {9.5, 5}, {10.5, 5}, {11.5, 4}, {10.5, 4}}]]}, 
+        NCache[{{Rational[21, 2], 4}, {Rational[21, 2], 5}, {
+          Rational[23, 2], 5}, {Rational[23, 2], 4}, {Rational[21, 2], 4}}, {{
+          10.5, 4}, {10.5, 5}, {11.5, 5}, {11.5, 4}, {10.5, 4}}]]}, 
       {RGBColor[1, 1, 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
@@ -1005,29 +940,35 @@ Cell[BoxData[
           Rational[-5, 2], 6}, {Rational[-5, 2], 5}, {
           Rational[-7, 2], 5}}, {{-3.5, 5}, {-3.5, 6}, {-2.5, 6}, {-2.5, 
            5}, {-3.5, 5}}]]}, 
-      {RGBColor[1, 1, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-5, 2], 5}, {Rational[-7, 2], 6}, {
-          Rational[-5, 2], 6}, {Rational[-3, 2], 5}, {
-          Rational[-5, 2], 5}}, {{-2.5, 5}, {-3.5, 6}, {-2.5, 6}, {-1.5, 
+        NCache[{{Rational[-5, 2], 5}, {Rational[-5, 2], 6}, {
+          Rational[-3, 2], 6}, {Rational[-3, 2], 5}, {
+          Rational[-5, 2], 5}}, {{-2.5, 5}, {-2.5, 6}, {-1.5, 6}, {-1.5, 
            5}, {-2.5, 5}}]]}, 
-      {RGBColor[1, 1, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-3, 2], 5}, {Rational[-5, 2], 6}, {
-          Rational[-3, 2], 6}, {Rational[-1, 2], 5}, {
-          Rational[-3, 2], 5}}, {{-1.5, 5}, {-2.5, 6}, {-1.5, 6}, {-0.5, 
+        NCache[{{Rational[-3, 2], 5}, {Rational[-3, 2], 6}, {
+          Rational[-1, 2], 6}, {Rational[-1, 2], 5}, {
+          Rational[-3, 2], 5}}, {{-1.5, 5}, {-1.5, 6}, {-0.5, 6}, {-0.5, 
            5}, {-1.5, 5}}]]}, 
-      {RGBColor[1, 1, 
+      {RGBColor[1, 
+        NCache[
+         Rational[1, 3], 0.3333333333333333], 
         NCache[
          Rational[1, 3], 0.3333333333333333]], EdgeForm[Thickness[0.001]], 
        PolygonBox[
-        NCache[{{Rational[-1, 2], 5}, {Rational[-3, 2], 6}, {
-          Rational[-1, 2], 6}, {Rational[1, 2], 5}, {
-          Rational[-1, 2], 5}}, {{-0.5, 5}, {-1.5, 6}, {-0.5, 6}, {
+        NCache[{{Rational[-1, 2], 5}, {Rational[-1, 2], 6}, {
+          Rational[1, 2], 6}, {Rational[1, 2], 5}, {
+          Rational[-1, 2], 5}}, {{-0.5, 5}, {-0.5, 6}, {0.5, 6}, {
           0.5, 5}, {-0.5, 5}}]]}, 
       {RGBColor[1, 1, 
         NCache[
@@ -1120,25 +1061,25 @@ Cell[BoxData[
           Rational[25, 2], 6}, {Rational[25, 2], 5}, {Rational[23, 2], 5}}, {{
           11.5, 5}, {11.5, 6}, {12.5, 6}, {12.5, 5}, {11.5, 5}}]]}}}, {
      {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-      PolygonBox[{{-0.5, 1}, {-0.5, 2}, {0.5, 1}, {0.5, 0}, {-0.5, 1}}]}, {
+      PolygonBox[{{3.5, 1}, {3.5, 2}, {4.5, 1}, {4.5, 0}, {3.5, 1}}]}, {
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-0.5, 2}, {-0.5, 3}, {0.5, 2}, {0.5, 1}, {-0.5, 2}}]}, 
+       PolygonBox[{{7.5, 2}, {7.5, 3}, {8.5, 2}, {8.5, 1}, {7.5, 2}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-1.5, 2}, {-1.5, 3}, {-0.5, 2}, {-0.5, 1}, {-1.5, 2}}]}}, {
+       PolygonBox[{{1.5, 2}, {1.5, 3}, {2.5, 2}, {2.5, 1}, {1.5, 2}}]}}, {
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-0.5, 3}, {-0.5, 4}, {0.5, 3}, {0.5, 2}, {-0.5, 3}}]}, 
+       PolygonBox[{{10.5, 3}, {10.5, 4}, {11.5, 3}, {11.5, 2}, {10.5, 3}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-1.5, 3}, {-1.5, 4}, {-0.5, 3}, {-0.5, 2}, {-1.5, 3}}]}, 
+       PolygonBox[{{4.5, 3}, {4.5, 4}, {5.5, 3}, {5.5, 2}, {4.5, 3}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-2.5, 3}, {-2.5, 4}, {-1.5, 3}, {-1.5, 2}, {-2.5, 3}}]}}, {
+       PolygonBox[{{0.5, 3}, {0.5, 4}, {1.5, 3}, {1.5, 2}, {0.5, 3}}]}}, {
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-0.5, 4}, {-0.5, 5}, {0.5, 4}, {0.5, 3}, {-0.5, 4}}]}, 
+       PolygonBox[{{10.5, 4}, {10.5, 5}, {11.5, 4}, {11.5, 3}, {10.5, 4}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-1.5, 4}, {-1.5, 5}, {-0.5, 4}, {-0.5, 3}, {-1.5, 4}}]}, 
+       PolygonBox[{{7.5, 4}, {7.5, 5}, {8.5, 4}, {8.5, 3}, {7.5, 4}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-2.5, 4}, {-2.5, 5}, {-1.5, 4}, {-1.5, 3}, {-2.5, 4}}]}, 
+       PolygonBox[{{3.5, 4}, {3.5, 5}, {4.5, 4}, {4.5, 3}, {3.5, 4}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-3.5, 4}, {-3.5, 5}, {-2.5, 4}, {-2.5, 3}, {-3.5, 4}}]}}, {
+       PolygonBox[{{-1.5, 4}, {-1.5, 5}, {-0.5, 4}, {-0.5, 3}, {-1.5, 4}}]}}, {
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
        PolygonBox[{{11.5, 5}, {11.5, 6}, {12.5, 5}, {12.5, 4}, {11.5, 5}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
@@ -1146,7 +1087,7 @@ Cell[BoxData[
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
        PolygonBox[{{6.5, 5}, {6.5, 6}, {7.5, 5}, {7.5, 4}, {6.5, 5}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
-       PolygonBox[{{-3.5, 5}, {-3.5, 6}, {-2.5, 5}, {-2.5, 4}, {-3.5, 5}}]}, 
+       PolygonBox[{{-0.5, 5}, {-0.5, 6}, {0.5, 5}, {0.5, 4}, {-0.5, 5}}]}, 
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
        PolygonBox[{{-4.5, 5}, {-4.5, 6}, {-3.5, 5}, {-3.5, 4}, {-4.5, 5}}]}}, {
       {RGBColor[0, 0, 1], EdgeForm[Thickness[0.001]], 
@@ -1168,426 +1109,9 @@ Cell[BoxData[
    3.633249854879861*^9, {3.633250308036031*^9, 3.63325031447297*^9}, {
    3.633250449628837*^9, 3.633250465834188*^9}, 3.633250954278757*^9, 
    3.633251011727088*^9, {3.6332522978072157`*^9, 3.6332523909333563`*^9}, {
-   3.633257661613439*^9, 3.633257662965919*^9}},
- FontSize->16,ImageCache->GraphicsData["CompressedBitmap", "\<\
-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\
-\>"]]
+   3.633257661613439*^9, 3.633257662965919*^9}, 3.633258200716556*^9, {
+   3.633258791038177*^9, 3.633258834974545*^9}},
+ FontSize->16]
 }, Open  ]]
 },
 WindowSize->{1440, 851},
@@ -1607,18 +1131,17 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 275, 6, 32, "Input"],
-Cell[836, 28, 2034, 44, 53, "Input"],
-Cell[2873, 74, 2273, 51, 33, "Input"],
-Cell[5149, 127, 2128, 49, 54, "Input"],
-Cell[7280, 178, 2197, 50, 54, "Input"],
-Cell[9480, 230, 2035, 50, 33, "Input"],
-Cell[11518, 282, 162, 4, 32, "Input"],
-Cell[11683, 288, 298, 11, 61, "Input"],
+Cell[558, 20, 375, 8, 32, "Input"],
+Cell[936, 30, 392, 9, 33, "Input"],
+Cell[1331, 41, 2273, 51, 33, "Input"],
+Cell[3607, 94, 2128, 49, 54, "Input"],
+Cell[5738, 145, 2197, 50, 54, "Input"],
+Cell[7938, 197, 2225, 54, 33, "Input"],
+Cell[10166, 253, 162, 4, 32, "Input"],
+Cell[10331, 259, 298, 11, 61, "Input"],
 Cell[CellGroupData[{
-Cell[12006, 303, 2999, 68, 73, "Input"],
-Cell[15008, 373, 62110, 1216, 164, 36272, 792, "CachedBoxData", "BoxData", \
-"Output"]
+Cell[10654, 274, 3121, 70, 73, "Input"],
+Cell[13778, 346, 35706, 767, 164, "Output"]
 }, Open  ]]
 }
 ]

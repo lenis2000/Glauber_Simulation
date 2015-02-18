@@ -30,47 +30,55 @@ for m in xrange(0,n):
 # 					la[m][j] = 1
 
 
-
+while True:
+	inch = raw_input("1 - do simulation, 2 - do simulation and print, q - exit:")
 		
-for x in xrange(1,4):
-	
-	m = numpy.random.random_integers(1,n-1)
-	j = numpy.random.random_integers(1,m)
-	coin = numpy.random.random_integers(0,1)
+	if inch == "q":
+		break
 
-	# print m, j, coin
+	for x in xrange(1,10000*n):
+		
+		m = numpy.random.random_integers(1,n-1)
+		j = numpy.random.random_integers(1,m)
+		coin = numpy.random.random_integers(0,1)
 
-	if coin == 1:
-		if la[m-1][j-1] < la[m][j-1]:
-			if m==1 or j==1:
-				la[m-1][j-1] += 1
-			else:
-				if la[m-1][j-1] < la[m-2][j-2]:
+		# print m, j, coin
+
+		if coin == 1:
+			if la[m-1][j-1] < la[m][j-1]:
+				if m==1 or j==1:
 					la[m-1][j-1] += 1
+				else:
+					if la[m-1][j-1] < la[m-2][j-2]:
+						la[m-1][j-1] += 1
 
-	if coin == 0:
-		if la[m-1][j-1] > la[m][j]:
-			if m==1 or j==m:
-				la[m-1][j-1] -= 1
-			else:
-				if la[m-1][j-1] > la[m-2][j-1]:
+		if coin == 0:
+			if la[m-1][j-1] > la[m][j]:
+				if m==1 or j==m:
 					la[m-1][j-1] -= 1
+				else:
+					if la[m-1][j-1] > la[m-2][j-1]:
+						la[m-1][j-1] -= 1
 
-# print la
+	if inch == "2":
+		print la
+	
 
-print "{"
+f = open('output.txt', 'w')
+
+f.write("{")
 for m in xrange(0,n):
-    print "{"
+    f.write("{")
     for k in xrange(0,n):
         if k == n-1:
-        	print (la[m][k])	
+        	f.write(str(la[m][k]))
         else:
-        	print (str(la[m][k]) + ", ")
+        	f.write(str(la[m][k]) + ", ")
     if m == n-1:
-    	print "}"
+    	f.write("}")
     else:
-    	print "},"
-print "}"
+    	f.write("},")
+f.write("}")
 
 
 
