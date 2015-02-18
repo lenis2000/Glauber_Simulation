@@ -1,7 +1,7 @@
 import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
-n = 80
+n = 6
 
 la = numpy.zeros((n,n))
 
@@ -32,7 +32,7 @@ for m in xrange(0,n):
 
 
 		
-for x in xrange(1,400000000):
+for x in xrange(1,4):
 	
 	m = numpy.random.random_integers(1,n-1)
 	j = numpy.random.random_integers(1,m)
@@ -59,11 +59,17 @@ for x in xrange(1,400000000):
 # print la
 
 print "{"
-for line in la:
+for m in xrange(0,n):
     print "{"
-    for element in line:
-        print (str(element) + ", ")
-    print "},"
+    for k in xrange(0,n):
+        if k == n-1:
+        	print (la[m][k])	
+        else:
+        	print (str(la[m][k]) + ", ")
+    if m == n-1:
+    	print "}"
+    else:
+    	print "},"
 print "}"
 
 
