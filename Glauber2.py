@@ -2,7 +2,7 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 30				###DEPTH OF THE INTERLACING ARRAY
+n = 40				###DEPTH OF THE INTERLACING ARRAY
 sim_steps = 10000 		###Number of Glauber steps per one simulation
 
 la = numpy.zeros((n,n))
@@ -76,8 +76,12 @@ while True:
 
 	for x in xrange(1,sim_steps*n):
 		
-		m = numpy.random.random_integers(1,n-1)
-		j = numpy.random.random_integers(1,m)
+		while True:			
+			m = numpy.random.random_integers(1,n-1)
+			j = numpy.random.random_integers(1,n-1)
+			if j <= m:
+				break
+
 		coin = numpy.random.random_integers(0,1)
 
 		# print m, j, coin
