@@ -25,8 +25,6 @@ J. Amer. Math. Soc. 14 297–346
 * **Kenyon, R. and Okounkov, A.** (2007). Limit shapes and the complex Burgers equation.
 Acta Math. 199 263–302
 
-(for more references, see [Laslier--Toninelli])
-
 #### My results on uniformly random lozenge tilings
 
 * **L. Petrov**,
