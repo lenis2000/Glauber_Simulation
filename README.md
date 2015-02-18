@@ -7,6 +7,8 @@ The simulation is done by Python, which represents lozenge tilings by matrices \
 
 Then the results of the simulation are drawn using Mathematica
 
+See also http://faculty.virginia.edu/petrov//blog/2015/02/18/Glauber-Simulation/ for more discussion and for a gallery of simulations
+
 ## References
 
 #### Description of Glauber dynamics, and proof of convergence rate
