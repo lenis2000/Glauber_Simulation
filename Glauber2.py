@@ -2,8 +2,8 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 16					###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 10000 		###Number of Glauber steps per one simulation
+n = 10					###DEPTH OF THE INTERLACING ARRAY
+sim_steps = 1000 		###Number of Glauber steps per one simulation
 
 la = numpy.zeros((n,n))
 
