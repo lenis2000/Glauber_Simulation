@@ -12,7 +12,7 @@ Then the results of the simulation are drawn using Mathematica
 #### Description of Glauber dynamics, and proof of convergence rate
 
 * **B. Laslier, F.L. Toninelli**, 
-Lozenge tilings, glauber dynamics and macroscopic shape (http://arxiv.org/abs/1310.5844)
+Lozenge tilings, glauber dynamics and macroscopic shape, http://arxiv.org/abs/1310.5844
 
 #### Classical works on limit shape of uniformly random lozenge tilings
 
@@ -24,6 +24,8 @@ J. Amer. Math. Soc. 14 297–346
 
 * **Kenyon, R. and Okounkov, A.** (2007). Limit shapes and the complex Burgers equation.
 Acta Math. 199 263–302
+
+(for more references, see [Laslier--Toninelli])
 
 #### My results on uniformly random lozenge tilings
 
