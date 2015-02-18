@@ -1,20 +1,35 @@
 import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
+###DEPTH OF THE INTERLACING ARRAY
+
 n = 6
 
 la = numpy.zeros((n,n))
 
+###BOUNDARY CONDITIONS
+
+###HEXAGON
+
 for m in xrange(0,n):
 	for j in xrange(0,m+1):
-		if 2*n/3 <= m <= n and 0 <= j <= m - 2*n/3:
-			la[m][j] = 2*n + 1
+		if n/2 <= m <= n and 0 <= j <= m - n/2:
+			la[m][j] = n/2 + 1
 		else:
-			if 2*n/3 <= m <= n and m - 2*n/3 < j <= m - n/3:
-				la[m][j] = 3*n/2 + 1
-			else:
-				la[m][j] = 1
+			la[m][j] = 1
 
+###CARDIOID
+
+# for m in xrange(0,n):
+# 	for j in xrange(0,m+1):
+# 		if 2*n/3 <= m <= n and 0 <= j <= m - 2*n/3:
+# 			la[m][j] = 2*n + 1
+# 		else:
+# 			if 2*n/3 <= m <= n and m - 2*n/3 < j <= m - n/3:
+# 				la[m][j] = 3*n/2 + 1
+# 			else:
+
+###12-GON
 
 # for m in xrange(0,n):
 # 	for j in xrange(0,m+1):
@@ -29,12 +44,34 @@ for m in xrange(0,n):
 # 				else:
 # 					la[m][j] = 1
 
+###INTERACTIVE SIMULATION
 
 while True:
-	inch = raw_input("1 - do simulation, 2 - do simulation and print, q - exit:")
+	inch = raw_input("1 - do simulation, 2 - do simulation and print, p - print to file, q - exit:")
 		
 	if inch == "q":
 		break
+
+	if inch == "p":
+
+		f = open('output.txt', 'w')
+
+		f.write("{")
+		for m in xrange(0,n):
+		    f.write("{")
+		    for k in xrange(0,n):
+		        if k == n-1:
+		        	f.write(str(la[m][k]))
+		        else:
+		        	f.write(str(la[m][k]) + ", ")
+		    if m == n-1:
+		    	f.write("}")
+		    else:
+		    	f.write("},")
+		f.write("}")
+
+		f.close()
+
 
 	for x in xrange(1,10000*n):
 		
@@ -62,23 +99,6 @@ while True:
 
 	if inch == "2":
 		print la
-	
-
-f = open('output.txt', 'w')
-
-f.write("{")
-for m in xrange(0,n):
-    f.write("{")
-    for k in xrange(0,n):
-        if k == n-1:
-        	f.write(str(la[m][k]))
-        else:
-        	f.write(str(la[m][k]) + ", ")
-    if m == n-1:
-    	f.write("}")
-    else:
-    	f.write("},")
-f.write("}")
 
 
 
