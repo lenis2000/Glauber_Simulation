@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15390,        413]
-NotebookOptionsPosition[     14639,        384]
-NotebookOutlinePosition[     14992,        400]
-CellTagsIndexPosition[     14949,        397]
+NotebookDataLength[     15469,        413]
+NotebookOptionsPosition[     14714,        384]
+NotebookOutlinePosition[     15072,        400]
+CellTagsIndexPosition[     15029,        397]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,7 +26,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.6332053180597258`*^9, 3.6332053186857233`*^9}, {
   3.633207022174069*^9, 3.633207022249222*^9}, {3.63321242022429*^9, 
   3.6332124240138187`*^9}, {3.633258832271429*^9, 3.633258832676313*^9}},
- FontSize->12],
+ FontSize->16],
 
 Cell[BoxData[
  RowBox[{
@@ -34,7 +34,7 @@ Cell[BoxData[
   "fileName", "=", 
    "\"\</Users/leo/Dropbox/Sci/Glauber_Simulation/output.txt\>\""}], 
   ";"}]], "Input",
- FontSize->12],
+ FontSize->16],
 
 Cell[BoxData[
  RowBox[{
@@ -43,7 +43,7 @@ Cell[BoxData[
   RowBox[{"{", 
    RowBox[{
     RowBox[{"EdgeForm", "[", 
-     RowBox[{"Thickness", "[", "eps", "]"}], "]"}], ",", "Blue", ",", 
+     RowBox[{"Thickness", "[", "eps", "]"}], "]"}], ",", "Black", ",", 
     RowBox[{"Polygon", "[", 
      RowBox[{"{", 
       RowBox[{
@@ -86,8 +86,8 @@ Cell[BoxData[
    3.6332170052441483`*^9, 3.633217005647517*^9}, {3.633249634049232*^9, 
    3.633249649873392*^9}, {3.633250932693129*^9, 3.6332509330513897`*^9}, {
    3.633251002929688*^9, 3.6332510033533363`*^9}, {3.6332523085661993`*^9, 
-   3.633252308867934*^9}},
- FontSize->12],
+   3.633252308867934*^9}, {3.633262881166918*^9, 3.633262881544664*^9}},
+ FontSize->16],
 
 Cell[BoxData[
  RowBox[{
@@ -138,7 +138,7 @@ Cell[BoxData[
    3.633213628307334*^9}, {3.633216994948889*^9, 3.633217016998703*^9}, {
    3.633249600162369*^9, 3.63324962327747*^9}, {3.633250942163512*^9, 
    3.633250942548814*^9}, {3.633252351043675*^9, 3.6332523599895573`*^9}},
- FontSize->12],
+ FontSize->16],
 
 Cell[BoxData[
  RowBox[{
@@ -190,7 +190,7 @@ Cell[BoxData[
    3.633214221014496*^9}, {3.633217014380251*^9, 3.633217015569458*^9}, {
    3.6332496089690228`*^9, 3.6332496093934402`*^9}, {3.633250945482243*^9, 
    3.6332509459235077`*^9}, {3.633252331919697*^9, 3.633252389734523*^9}},
- FontSize->12],
+ FontSize->16],
 
 Cell[BoxData[
  RowBox[{
@@ -246,13 +246,13 @@ Cell[BoxData[
    3.6332162122562513`*^9, {3.6332162473800097`*^9, 3.633216266862759*^9}, {
    3.633216302261244*^9, 3.633216311942513*^9}, {3.63321638105737*^9, 
    3.633216382885769*^9}, {3.633258821889125*^9, 3.633258825307876*^9}},
- FontSize->12],
+ FontSize->16],
 
 Cell[BoxData[
  RowBox[{"eps", ":=", "0.001"}]], "Input",
  CellChangeTimes->{{3.63321360527943*^9, 3.633213609227353*^9}, 
    3.633213675557642*^9},
- FontSize->12],
+ FontSize->16],
 
 Cell[CellGroupData[{
 
@@ -268,16 +268,18 @@ Cell[BoxData[
    3.6332610122322903`*^9, 3.6332610390233507`*^9}, {3.6332611024481993`*^9, 
    3.6332611269551153`*^9}, {3.633261163200317*^9, 3.6332612277733727`*^9}, 
    3.6332612882793827`*^9, {3.6332613197135277`*^9, 3.633261342764627*^9}},
- FontSize->12],
+ FontSize->16],
 
 Cell[BoxData[
  DynamicBox[ToBoxes[
    Refresh[$CellContext`\[Lambda] = ReadList[$CellContext`fileName], 
     UpdateInterval -> 1], StandardForm],
-  ImageSizeCache->{902.40234375, {437.953125, 9.046875}}]], "Output",
+  ImageSizeCache->{1806.203125, {7623.9375, 12.0625}}]], "Output",
  CellChangeTimes->{
-  3.633261343053338*^9, {3.633279607828186*^9, 3.6332796198666*^9}},
- FontSize->12]
+  3.633261343053338*^9, {3.633262861633301*^9, 3.633262882936398*^9}, 
+   3.6332633733508368`*^9, 3.633263716407419*^9, 3.6332792423152637`*^9, 
+   3.633279283776133*^9, 3.633279811418518*^9, 3.633288198592526*^9},
+ FontSize->16]
 }, Open  ]],
 
 Cell[BoxData[
@@ -290,9 +292,8 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}]], "Input",
  CellChangeTimes->{
-  3.633249850542836*^9, {3.6332796120918083`*^9, 3.633279613721293*^9}, {
-   3.63327969796343*^9, 3.63327972660697*^9}},
- FontSize->12],
+  3.633249850542836*^9, {3.633279544894238*^9, 3.633279547075246*^9}},
+ FontSize->16],
 
 Cell[CellGroupData[{
 
@@ -330,7 +331,8 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"-", "n"}], "+", "1"}], ",", 
            RowBox[{
-            RowBox[{"n", "/", "2"}], "-", "1"}]}], "}"}]}], "]"}], ",", 
+            RowBox[{"3", 
+             RowBox[{"n", "/", "2"}]}], "-", "1"}]}], "}"}]}], "]"}], ",", 
        RowBox[{"Table", "[", 
         RowBox[{
          RowBox[{"LozV", "[", 
@@ -350,8 +352,9 @@ Cell[BoxData[
      "t"}], "]"}], "]"}], "]"}]], "Input",
  CellChangeTimes->{
   3.6332607565285263`*^9, {3.6332612205847397`*^9, 3.633261223431514*^9}, {
-   3.633261576830361*^9, 3.633261578542144*^9}, 3.633279678846418*^9},
- FontSize->12],
+   3.633261576830361*^9, 3.633261578542144*^9}, {3.633262872372444*^9, 
+   3.633262874439753*^9}, {3.63328820631022*^9, 3.633288240915263*^9}},
+ FontSize->16],
 
 Cell[BoxData[
  DynamicBox[ToBoxes[
@@ -364,8 +367,8 @@ Cell[BoxData[
         If[$CellContext`x + $CellContext`k > 0, 
          $CellContext`LozL[$CellContext`x + 1, $CellContext`k - 
           1, $CellContext`eps]]], {$CellContext`k, 
-        1, $CellContext`n}, {$CellContext`x, -$CellContext`n + 
-        1, $CellContext`n/2 - 1}], 
+        1, $CellContext`n}, {$CellContext`x, -$CellContext`n + 1, 
+        3 ($CellContext`n/2) - 1}], 
       Table[
        $CellContext`LozV[Part[
           Part[
@@ -375,15 +378,12 @@ Cell[BoxData[
 $CellContext`i, $CellContext`eps], {$CellContext`i, 
         1, $CellContext`n}, {$CellContext`j, 
         1, $CellContext`i}]}, $CellContext`t]], StandardForm],
-  ImageSizeCache->{1125., {392., 396.}}]], "Output",
- CellChangeTimes->{{3.633261154682393*^9, 3.6332612237273273`*^9}, 
-   3.633261343701066*^9, 3.6332615788777027`*^9, {3.633279609340958*^9, 
-   3.633279625923584*^9}, {3.633279675316841*^9, 3.633279679186186*^9}},
- FontSize->12]
+  ImageSizeCache->{62., {2., 9.}}]], "Output",
+ CellChangeTimes->{3.633288201417109*^9, 3.633288242257942*^9}]
 }, Open  ]]
 },
-WindowSize->{1440, 851},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1920, 1035},
+WindowMargins->{{Automatic, 1440}, {-3, Automatic}},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -399,21 +399,21 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 375, 8, 29, "Input"],
-Cell[936, 30, 158, 6, 29, "Input"],
-Cell[1097, 38, 2273, 51, 29, "Input"],
-Cell[3373, 91, 2128, 49, 29, "Input"],
-Cell[5504, 142, 2197, 50, 29, "Input"],
-Cell[7704, 194, 2225, 54, 29, "Input"],
-Cell[9932, 250, 162, 4, 29, "Input"],
+Cell[558, 20, 375, 8, 32, "Input"],
+Cell[936, 30, 158, 6, 33, "Input"],
+Cell[1097, 38, 2320, 51, 33, "Input"],
+Cell[3420, 91, 2128, 49, 33, "Input"],
+Cell[5551, 142, 2197, 50, 33, "Input"],
+Cell[7751, 194, 2225, 54, 33, "Input"],
+Cell[9979, 250, 162, 4, 32, "Input"],
 Cell[CellGroupData[{
-Cell[10119, 258, 633, 12, 29, "Input"],
-Cell[10755, 272, 319, 7, 464, "Output"]
+Cell[10166, 258, 633, 12, 32, "Input"],
+Cell[10802, 272, 462, 9, 7653, "Output"]
 }, Open  ]],
-Cell[11089, 282, 382, 12, 28, "Input"],
+Cell[11279, 284, 332, 11, 32, "Input"],
 Cell[CellGroupData[{
-Cell[11496, 298, 1981, 55, 61, "Input"],
-Cell[13480, 355, 1143, 26, 803, "Output"]
+Cell[11636, 299, 2083, 57, 73, "Input"],
+Cell[13722, 358, 976, 23, 28, "Output"]
 }, Open  ]]
 }
 ]
