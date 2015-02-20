@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15992,        423]
-NotebookOptionsPosition[     15234,        394]
-NotebookOutlinePosition[     15593,        410]
-CellTagsIndexPosition[     15550,        407]
+NotebookDataLength[     16290,        428]
+NotebookOptionsPosition[     15537,        399]
+NotebookOutlinePosition[     15891,        415]
+CellTagsIndexPosition[     15848,        412]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,9 +32,10 @@ Cell[BoxData[
  RowBox[{
   RowBox[{
   "fileName", "=", 
-   "\"\</Users/leopetrov/Dropbox/Sci/Glauber_Simulation/output.txt\>\""}], 
+   "\"\</Users/leopetrov/Dropbox/Sci/Glauber_Simulation/output1.txt\>\""}], 
   ";"}]], "Input",
- CellChangeTimes->{{3.63336699310957*^9, 3.633366996156783*^9}},
+ CellChangeTimes->{{3.63336699310957*^9, 3.633366996156783*^9}, 
+   3.633428320866289*^9},
  FontSize->14],
 
 Cell[BoxData[
@@ -283,7 +284,9 @@ Cell[BoxData[
    3.6332633733508368`*^9, 3.633263716407419*^9, 3.6332792423152637`*^9, 
    3.633279283776133*^9, 3.633279811418518*^9, 3.633288198592526*^9, 
    3.633357760632524*^9, {3.63336694453098*^9, 3.6333669465924263`*^9}, {
-   3.633366987727768*^9, 3.633367025696846*^9}},
+   3.633366987727768*^9, 3.633367025696846*^9}, {3.633428144607184*^9, 
+   3.633428154471672*^9}, {3.6334282441128263`*^9, 3.6334282463778887`*^9}, {
+   3.633428281155505*^9, 3.633428360368266*^9}},
  FontSize->14]
 }, Open  ]],
 
@@ -388,13 +391,15 @@ $CellContext`i, $CellContext`eps], {$CellContext`i,
  CellChangeTimes->{
   3.633288201417109*^9, 3.633288242257942*^9, {3.633357760700778*^9, 
    3.633357786956142*^9}, {3.633366944554594*^9, 3.633366946736031*^9}, {
-   3.6333669878888607`*^9, 3.6333670139310093`*^9}},
+   3.6333669878888607`*^9, 3.6333670139310093`*^9}, 3.633428144776792*^9, {
+   3.633428244297003*^9, 3.6334282465631857`*^9}, {3.6334282813226547`*^9, 
+   3.633428354194468*^9}},
  FontSize->14]
 }, Open  ]]
 },
-WindowSize->{1280, 1391},
-WindowMargins->{{Automatic, 0}, {Automatic, -1}},
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
+WindowSize->{1440, 851},
+WindowMargins->{{0, Automatic}, {Automatic, -1}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -410,20 +415,20 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 375, 8, 29, "Input"],
-Cell[936, 30, 229, 7, 32, "Input"],
-Cell[1168, 39, 2373, 52, 32, "Input"],
-Cell[3544, 93, 2128, 49, 49, "Input"],
-Cell[5675, 144, 2197, 50, 32, "Input"],
-Cell[7875, 196, 2225, 54, 32, "Input"],
-Cell[10103, 252, 234, 5, 29, "Input"],
+Cell[936, 30, 256, 8, 32, "Input"],
+Cell[1195, 40, 2373, 52, 32, "Input"],
+Cell[3571, 94, 2128, 49, 32, "Input"],
+Cell[5702, 145, 2197, 50, 32, "Input"],
+Cell[7902, 197, 2225, 54, 32, "Input"],
+Cell[10130, 253, 234, 5, 29, "Input"],
 Cell[CellGroupData[{
-Cell[10362, 261, 633, 12, 29, "Input"],
-Cell[10998, 275, 566, 11, 29, "Output"]
+Cell[10389, 262, 633, 12, 29, "Input"],
+Cell[11025, 276, 716, 13, 29, "Output"]
 }, Open  ]],
-Cell[11579, 289, 384, 12, 29, "Input"],
+Cell[11756, 292, 384, 12, 29, "Input"],
 Cell[CellGroupData[{
-Cell[11988, 305, 2082, 57, 66, "Input"],
-Cell[14073, 364, 1145, 27, 374, "Output"]
+Cell[12165, 308, 2082, 57, 66, "Input"],
+Cell[14250, 367, 1271, 29, 374, "Output"]
 }, Open  ]]
 }
 ]

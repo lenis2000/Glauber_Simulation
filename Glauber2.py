@@ -2,9 +2,9 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 40				###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 200	###Number of Glauber steps (times height of the system) per one simulation
-biga = 500
+n = 20				###DEPTH OF THE INTERLACING ARRAY
+sim_steps = 1000	###Number of Glauber steps (times height of the system) per one simulation
+biga = 50
 
 la = numpy.zeros((n,n))
 
@@ -12,12 +12,12 @@ la = numpy.zeros((n,n))
 
 ###HEXAGON
 
-# for m in xrange(0,n):
-# 	for j in xrange(0,m+1):
-# 		if n/2 <= m <= n and 0 <= j <= m - n/2:
-# 			la[m][j] = n/2 + 1
-# 		else:
-# 			la[m][j] = 1
+for m in xrange(0,n):
+	for j in xrange(0,m+1):
+		if n/2 <= m <= n and 0 <= j <= m - n/2:
+			la[m][j] = n/2 + 1
+		else:
+			la[m][j] = 1
 
 ###SYMMETRIC CARDIOID
 
@@ -62,24 +62,16 @@ la = numpy.zeros((n,n))
 
 ##24-GON
 
+# def top_row ( n, k ) :
+# 	return ( (n-k+1) / (n/8) ) * (n/7) + 1
+
 # for m in xrange(0,n):
 # 	for j in xrange(0,m+1):
-# 		if 7*n/8 <= m <= n and 0 <= j <= m - 7*n/8:
-# 			la[m][j] = 19/10*n + 1
-# 		else:
-# 			if 6*n/8 <= m <= n and m - 7*n/8 < j <= m - 6*n/8:
-# 				la[m][j] = 18/10*n + 1
-# 			else:
-# 				if 5*n/8 <= m <= n and m - 6*n/8 < j <= m - 5*n/8:
-# 					la[m][j] = 17/10*n + 1
-# 				else:
-# 					if 4*n/8 <= m <= n and m - 5*n/8 < j <= m - 4*n/8:
-# 						la[m][j] = 16/10*n + 1
-# 					else:
-# 						if 3*n/8 <= m <= n and m - 4*n/8 < j <= m - 3*n/8:
-# 							la[m][j] = 15/10*n/2 + 1
-# 						else:
-# 							la[m][j] = 1
+# 		# la[m][j] = numpy.random.random_integers(m/7,6*m/7)
+# 		la[m][j] = 1
+
+# for m in xrange(0,n-1):
+# 	la[n-1,m] = top_row(n,m)
 
 ###INTERACTIVE SIMULATION 
 
@@ -173,11 +165,11 @@ for a in xrange(0,biga):
 			if j <= m:
 				break
 
-		coin = numpy.random.random(1)
+		coin = numpy.random.random_integers(0,1)
 
 		# print m, j, coin
 
-		if coin > 0.504:
+		if coin == 1:
 			if la[m-1][j-1] < la[m][j-1]:
 				if m==1 or j==1:
 					la[m-1][j-1] += 1
@@ -185,7 +177,7 @@ for a in xrange(0,biga):
 					if la[m-1][j-1] < la[m-2][j-2]:
 						la[m-1][j-1] += 1
 
-		if coin < 0.504:
+		if coin == 0:
 			if la[m-1][j-1] > la[m][j]:
 				if m==1 or j==m:
 					la[m-1][j-1] -= 1
