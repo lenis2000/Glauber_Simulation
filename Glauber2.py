@@ -2,9 +2,9 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 200				###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 100000		###Number of Glauber steps per one simulation
-biga = 60
+n = 40				###DEPTH OF THE INTERLACING ARRAY
+sim_steps = 200	###Number of Glauber steps (times height of the system) per one simulation
+biga = 500
 
 la = numpy.zeros((n,n))
 
@@ -24,10 +24,10 @@ la = numpy.zeros((n,n))
 # for m in xrange(0,n):
 # 	for j in xrange(0,m+1):
 # 		if 2*n/3 <= m <= n and 0 <= j <= m - 2*n/3:
-# 			la[m][j] = 2*n + 1
+# 			la[m][j] = n + 1
 # 		else:
 # 			if n/3 <= m <= n and m - 2*n/3 < j <= m - n/3:
-# 				la[m][j] = n + 1
+# 				la[m][j] = n/2 + 1
 # 			else:
 # 				la[m][j] = 1
 
@@ -47,23 +47,44 @@ la = numpy.zeros((n,n))
 
 ###12-GON
 
-for m in xrange(0,n):
-	for j in xrange(0,m+1):
-		if 3*n/4 <= m <= n and 0 <= j <= m - 3*n/4:
-			la[m][j] = 5*n/4 + 1
-		else:
-			if 2*n/4 <= m <= n and m - 3*n/4 < j <= m - 2*n/4:
-				la[m][j] = 2*n/2 + 1
-			else:
-				if 1*n/4 <= m <= n and m - 2*n/4 < j <= m - 1*n/4:
-					la[m][j] = n/15 + 1
-				else:
-					la[m][j] = 1
+# for m in xrange(0,n):
+# 	for j in xrange(0,m+1):
+# 		if 3*n/4 <= m <= n and 0 <= j <= m - 3*n/4:
+# 			la[m][j] = 5*n/4 + 1
+# 		else:
+# 			if 2*n/4 <= m <= n and m - 3*n/4 < j <= m - 2*n/4:
+# 				la[m][j] = 2*n/2 + 1
+# 			else:
+# 				if 1*n/4 <= m <= n and m - 2*n/4 < j <= m - 1*n/4:
+# 					la[m][j] = n/15 + 1
+# 				else:
+					# la[m][j] = 1
+
+##24-GON
+
+# for m in xrange(0,n):
+# 	for j in xrange(0,m+1):
+# 		if 7*n/8 <= m <= n and 0 <= j <= m - 7*n/8:
+# 			la[m][j] = 19/10*n + 1
+# 		else:
+# 			if 6*n/8 <= m <= n and m - 7*n/8 < j <= m - 6*n/8:
+# 				la[m][j] = 18/10*n + 1
+# 			else:
+# 				if 5*n/8 <= m <= n and m - 6*n/8 < j <= m - 5*n/8:
+# 					la[m][j] = 17/10*n + 1
+# 				else:
+# 					if 4*n/8 <= m <= n and m - 5*n/8 < j <= m - 4*n/8:
+# 						la[m][j] = 16/10*n + 1
+# 					else:
+# 						if 3*n/8 <= m <= n and m - 4*n/8 < j <= m - 3*n/8:
+# 							la[m][j] = 15/10*n/2 + 1
+# 						else:
+# 							la[m][j] = 1
 
 ###INTERACTIVE SIMULATION 
 
 # while True:
-# 	inch = raw_input("1 - do simulation, 2 - do simulation and print, p - print to file, q - exit:")
+# 	inch = raw_input("any key - do simulation, 2 - do simulation and print, p - print to file, q - exit:")
 		
 # 	if inch == "q":
 # 		break
@@ -152,11 +173,11 @@ for a in xrange(0,biga):
 			if j <= m:
 				break
 
-		coin = numpy.random.random_integers(0,1)
+		coin = numpy.random.random(1)
 
 		# print m, j, coin
 
-		if coin == 1:
+		if coin > 0.504:
 			if la[m-1][j-1] < la[m][j-1]:
 				if m==1 or j==1:
 					la[m-1][j-1] += 1
@@ -164,7 +185,7 @@ for a in xrange(0,biga):
 					if la[m-1][j-1] < la[m-2][j-2]:
 						la[m-1][j-1] += 1
 
-		if coin == 0:
+		if coin < 0.504:
 			if la[m-1][j-1] > la[m][j]:
 				if m==1 or j==m:
 					la[m-1][j-1] -= 1
