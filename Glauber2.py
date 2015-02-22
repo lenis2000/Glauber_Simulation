@@ -2,9 +2,9 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 136			###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 4000	###Number of Glauber steps (times height of the system) per one simulation
-biga = 10000
+n = 40			###DEPTH OF THE INTERLACING ARRAY
+sim_steps = 400	###Number of Glauber steps (times height of the system) per one simulation
+biga = 2000
 
 la = numpy.zeros((n,n))
 
@@ -68,10 +68,12 @@ def top_row ( n, k ) :
 for m in xrange(0,n):
 	for j in xrange(0,m+1):
 		# la[m][j] = numpy.random.random_integers(m/7,6*m/7)
-		la[m][j] = 1
+		la[m][j] = n/2-5
 
 for m in xrange(0,n-1):
-	la[n-1,m] = top_row(n,m)
+	la[n-1][m] = top_row(n,m)
+
+	la[n-1][n-1] = 1
 
 ###INTERACTIVE SIMULATION 
 
@@ -161,7 +163,7 @@ for a in xrange(0,biga):
 		
 		while True:			
 			m = numpy.random.random_integers(1,n-1)
-			j = numpy.random.random_integers(1,n-1)
+			j = numpy.random.random_integers(1,n)
 			if j <= m:
 				break
 
@@ -185,11 +187,11 @@ for a in xrange(0,biga):
 					if la[m-1][j-1] > la[m-2][j-1]:
 						la[m-1][j-1] -= 1
 
-		if m == n/2 and n/12 < j and j < 2*n/12:
-			la[m-1][j-1] = 14*n/24
+		# if m == n/2 and n/12 < j and j < 2*n/12:
+		# 	la[m-1][j-1] = 14*n/24
 
-		if m == n/2 and 4*n/12 < j and j < 5*n/12:
-			la[m-1][j-1] = 7*n/24
+		# if m == n/2 and 4*n/12 < j and j < 5*n/12:
+		# 	la[m-1][j-1] = 7*n/24
 
 
 
