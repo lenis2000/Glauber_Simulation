@@ -2,9 +2,9 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 40			###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 400	###Number of Glauber steps (times height of the system) per one simulation
-biga = 2000
+n = 200				###DEPTH OF THE INTERLACING ARRAY
+sim_steps = 100000	###Number of Glauber steps (times height of the system) per one simulation
+biga = 5000
 
 la = numpy.zeros((n,n))
 
@@ -12,12 +12,12 @@ la = numpy.zeros((n,n))
 
 ###HEXAGON
 
-# for m in xrange(0,n):
-# 	for j in xrange(0,m+1):
-# 		if n/2 <= m <= n and 0 <= j <= m - n/2:
-# 			la[m][j] = 2*n/3 + 1
-# 		else:
-# 			la[m][j] = 1
+for m in xrange(0,n):
+	for j in xrange(0,m+1):
+		if n/2 <= m <= n and 0 <= j <= m - n/2:
+			la[m][j] = n/2 + 1
+		else:
+			la[m][j] = 1
 
 ###SYMMETRIC CARDIOID
 
@@ -62,18 +62,18 @@ la = numpy.zeros((n,n))
 
 ##24-GON
 
-def top_row ( n, k ) :
-	return ( (n-k-1) / (n/8) ) * (n/8) + 1
+# def top_row ( n, k ) :
+# 	return ( (n-k-1) / (n/8) ) * (n/8) + 1
 
-for m in xrange(0,n):
-	for j in xrange(0,m+1):
-		# la[m][j] = numpy.random.random_integers(m/7,6*m/7)
-		la[m][j] = n/2-5
+# for m in xrange(0,n):
+# 	for j in xrange(0,m+1):
+# 		# la[m][j] = numpy.random.random_integers(m/7,6*m/7)
+# 		la[m][j] = n/2-5
 
-for m in xrange(0,n-1):
-	la[n-1][m] = top_row(n,m)
+# for m in xrange(0,n-1):
+# 	la[n-1][m] = top_row(n,m)
 
-	la[n-1][n-1] = 1
+# 	la[n-1][n-1] = 1
 
 ###INTERACTIVE SIMULATION 
 
@@ -187,8 +187,10 @@ for a in xrange(0,biga):
 					if la[m-1][j-1] > la[m-2][j-1]:
 						la[m-1][j-1] -= 1
 
-		# if m == n/2 and n/12 < j and j < 2*n/12:
-		# 	la[m-1][j-1] = 14*n/24
+###KEEP HOLES
+
+		# if m == n/2 and 7*n/32 < j and j < 9*n/32:
+		# 	la[m-1][j-1] = n/4
 
 		# if m == n/2 and 4*n/12 < j and j < 5*n/12:
 		# 	la[m-1][j-1] = 7*n/24
