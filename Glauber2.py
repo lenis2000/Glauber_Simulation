@@ -3,7 +3,7 @@ numpy.set_printoptions(threshold=numpy.nan)
 
 
 n = 200				###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 100000	###Number of Glauber steps (times height of the system) per one simulation
+sim_steps = 20000	###Number of Glauber steps (times height of the system) per one simulation
 biga = 5000
 
 la = numpy.zeros((n,n))
@@ -12,12 +12,14 @@ la = numpy.zeros((n,n))
 
 ###HEXAGON
 
-for m in xrange(0,n):
+for j in xrange(0,n):
+	if 0 <= j < n/2:
+		la[n-1][j] = n/2 + 1
+	else:
+		la[n-1][j] = 1
+for m in xrange(0,n-1):
 	for j in xrange(0,m+1):
-		if n/2 <= m <= n and 0 <= j <= m - n/2:
-			la[m][j] = n/2 + 1
-		else:
-			la[m][j] = 1
+		la[m][j] = n/4+1
 
 ###SYMMETRIC CARDIOID
 
@@ -189,8 +191,8 @@ for a in xrange(0,biga):
 
 ###KEEP HOLES
 
-		# if m == n/2 and 7*n/32 < j and j < 9*n/32:
-		# 	la[m-1][j-1] = n/4
+		if m == 2*n/3 and 9*n/32 < j and j < 11*n/32:
+			la[m-1][j-1] = n/4
 
 		# if m == n/2 and 4*n/12 < j and j < 5*n/12:
 		# 	la[m-1][j-1] = 7*n/24
