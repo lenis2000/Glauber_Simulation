@@ -2,9 +2,9 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 10			###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 25000	###Number of Glauber steps (times height of the system) per one simulation
-biga = 1
+n = 48			###DEPTH OF THE INTERLACING ARRAY
+sim_steps = 2500	###Number of Glauber steps (times height of the system) per one simulation
+biga = 5
 
 la = numpy.zeros((n,n))
 laprint = numpy.zeros((n,n))
@@ -66,6 +66,23 @@ for a in xrange(0,biga):
 			j = numpy.random.random_integers(1,n)
 			if j <= m:
 				break
-				
+
+		coin = numpy.random.random()
+
+		if coin < .5:
+			if la[m-1][j-1] < la[m][j-1]:
+				if m==1 or j==1:
+					la[m-1][j-1] += 1
+				else:
+					if la[m-1][j-1] < la[m-2][j-2]:
+						la[m-1][j-1] += 1
+		else:
+			if la[m-1][j-1] > la[m][j]:
+				if m==1 or j==m:
+					la[m-1][j-1] -= 1
+				else:
+					if la[m-1][j-1] > la[m-2][j-1]:
+						la[m-1][j-1] -= 1
+		
 
 
