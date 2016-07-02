@@ -2,22 +2,43 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 100			###DEPTH OF THE INTERLACING ARRAY
-sim_steps = 2000	###Number of Glauber steps (times height of the system) per one simulation
-biga = 5000
+n = 20			###DEPTH OF THE INTERLACING ARRAY
+sim_steps = 25000	###Number of Glauber steps (times height of the system) per one simulation
+biga = 1
 
 la = numpy.zeros((n,n))
+laprint = numpy.zeros((n,n))
 
 ###BOUNDARY CONDITIONS
 
 ###HEXAGON
 
+
+AAA = n/2
+FFF = n/6
+addition = -AAA/2-1
+
 for m in xrange(0,n):
 	for j in xrange(0,m+1):
-		if n/2 <= m <= n and 0 <= j <= m - n/2:
-			la[m][j] = n/2 + 1
-		else:
-			la[m][j] = 1
+		if m >= n/2:
+			if 0 <= j <= m - n/2:
+				la[m][j] = AAA + 1 + addition
+			if j >= n/2:
+				la[m][j] = 1 + addition
+		if n/2 - 1 <= m < n/2 - 1 + 2*FFF and (n/2-1)/2 - FFF + (m-n/2+1) < j < (n/2-1)/2 + FFF:
+			la[m][j] = AAA/2 + 1 + addition
+		if n/2 - 1 - 2*FFF < m <= n/2 - 1 and (n/2-1)/2 - FFF < j < (n/2-1)/2 + FFF + (m-n/2+1):
+			la[m][j] = AAA/2 + 1 + addition
+			# print str(m) + " " + str(j) + " " + str(la[m][j-1]-j)
+
+		laprint[m][j]=la[m][j]-j-1
+
+print laprint[n/2]
+print laprint[n/2-1]
+
+# for x in xrange(0,n/2):
+# 	print la[n/2-1][x]-x
+
 
 ###SYMMETRIC CARDIOID
 
@@ -167,33 +188,32 @@ for a in xrange(0,biga):
 			if j <= m:
 				break
 
-		coin = numpy.random.random()
+		##KEEP HOLES
 
-		# print m, j, coin
-
-		if coin < .5:
-			if la[m-1][j-1] < la[m][j-1]:
-				if m==1 or j==1:
-					la[m-1][j-1] += 1
-				else:
-					if la[m-1][j-1] < la[m-2][j-2]:
-						la[m-1][j-1] += 1
+		if n/2 - 1 <= m < n/2 - 1 + 2*FFF and (n/2-1)/2 - FFF + (m-n/2+1) < j < (n/2-1)/2 + FFF:
+			la[m][j] = AAA/2 + 1 + addition
 		else:
-			if la[m-1][j-1] > la[m][j]:
-				if m==1 or j==m:
-					la[m-1][j-1] -= 1
+			if n/2 - 1 - 2*FFF < m <= n/2 - 1 and (n/2-1)/2 - FFF < j < (n/2-1)/2 + FFF + (m-n/2+1):
+				la[m][j] = AAA/2 + 1 + addition
+			else:
+				coin = numpy.random.random()
+
+				if coin < .5:
+					if la[m-1][j-1] < la[m][j-1]:
+						if m==1 or j==1:
+							la[m-1][j-1] += 1
+						else:
+							if la[m-1][j-1] < la[m-2][j-2]:
+								la[m-1][j-1] += 1
 				else:
-					if la[m-1][j-1] > la[m-2][j-1]:
-						la[m-1][j-1] -= 1
-
-###KEEP HOLES
-
-		# if m == 2*n/3 and 9*n/32 < j and j < 11*n/32:
-		# 	la[m-1][j-1] = n/4
-
-		# if m == n/2 and 4*n/12 < j and j < 5*n/12:
-		# 	la[m-1][j-1] = 7*n/24
+					if la[m-1][j-1] > la[m][j]:
+						if m==1 or j==m:
+							la[m-1][j-1] -= 1
+						else:
+							if la[m-1][j-1] > la[m-2][j-1]:
+								la[m-1][j-1] -= 1
 
 
+				
 
 
