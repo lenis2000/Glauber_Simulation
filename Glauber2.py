@@ -2,7 +2,7 @@ import numpy
 numpy.set_printoptions(threshold=numpy.nan)
 
 
-n = 20			###DEPTH OF THE INTERLACING ARRAY
+n = 100			###DEPTH OF THE INTERLACING ARRAY
 sim_steps = 50000	###Number of Glauber steps (times height of the system) per one simulation
 biga = 50
 
@@ -16,8 +16,8 @@ laprint = numpy.zeros((n,n))
 
 AAA = n
 addition = -AAA/2-1
-HOLE_SIZE = 3
-OTHER_ADD = 0
+HOLE_SIZE = 8
+OTHER_ADD = 8
 
 #MAKE A PLAIN HEXAGON ; INITIAL CONDITION SPEEDS UP THE CONVERGENCE
 
@@ -30,7 +30,7 @@ for m in xrange(0,n):
 				la[m][j] = 1 + addition
 
 for a in xrange(0,biga):
-	f = open('output' + str(a) + '.txt', 'w')
+	f = open('outputXX' + str(a) + '.txt', 'w')
 	f.write("{")
 	for m in xrange(0,n):
 		f.write("{")
