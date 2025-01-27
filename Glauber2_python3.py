@@ -4,9 +4,9 @@ import numpy as np
 # or np.set_printoptions(threshold=np.inf)
 np.set_printoptions(threshold=None)
 
-n = 30               # DEPTH OF THE INTERLACING ARRAY
-sim_steps = 5000     # Number of Glauber steps (times height of the system) per one simulation
-biga = 50
+n = 40               # DEPTH OF THE INTERLACING ARRAY
+sim_steps = 50000     # Number of Glauber steps (times height of the system) per one simulation
+biga = 5
 
 la = np.zeros((n, n))
 laprint = np.zeros((n, n))
@@ -48,6 +48,8 @@ for a in range(biga):
 
     # Perform Glauber updates
     for x in range(1, sim_steps * n):
+        if x % 50000 == 0:
+            print(x / (sim_steps * n))
         # random_integers(1, n-1) -> randint(1, n) is the direct replacement:
         m_rand = np.random.randint(1, n)
         j_rand = np.random.randint(1, m_rand + 1)  # inclusive of m_rand
